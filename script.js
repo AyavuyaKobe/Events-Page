@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
-    // Loop through the events and create event cards
+    // Event cards
     events.forEach(event => {
         const eventCard = document.createElement("div");
         eventCard.classList.add("event");
