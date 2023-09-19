@@ -34,9 +34,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const description = document.createElement("p");
         description.textContent = event.description;
 
+        const subscribeButton = document.createElement("button");
+        subscribeButton.textContent = "Join";
+        subscribeButton.addEventListener("click", () => {
+            // Subscription logic
+            alert("You have joined the event: " + event.title);
+        });
+
         eventCard.appendChild(title);
         eventCard.appendChild(date);
         eventCard.appendChild(description);
+        eventCard.appendChild(subscribeButton);
 
         eventList.appendChild(eventCard);
     });
